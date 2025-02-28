@@ -20,7 +20,7 @@
         const state = getParameterByName('state');
 
         // Формируем Deep Link для перенаправления в приложение
-        const deepLink = `oauth.example.com://oauth/callback?code=${code}&state=${state}`;
+        const deepLink = `com.example.oauth://oauth/callback?code=${code}&state=${state}`;
 
         // Перенаправляем пользователя в приложение
         window.location.href = deepLink;
